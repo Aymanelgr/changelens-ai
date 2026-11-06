@@ -282,7 +282,11 @@ def test_prompt_injection_text_is_only_ever_data(demo):
 
 
 def test_secret_in_archive_never_becomes_a_quote(demo):
-    leaky = {"keys.py": "API = 'AKIAABCDEFGHIJKLMNOP'\nLIMIT = 10000\n", "ok.py": "LIMIT = 10000\n"}
+    # Fake AWS key: test data proving secrets never become quotes.
+    leaky = {
+        "keys.py": "API = 'AKIAABCDEFGHIJKLMNOP'\nLIMIT = 10000\n",  # gitleaks:allow
+        "ok.py": "LIMIT = 10000\n",
+    }
     demo.analyst.upload(f"/projects/{demo.id}/repository-snapshots", "s.zip", zip_bytes(leaky))
     findings = demo.findings(demo.run())
     assert not [f for f in findings if "keys.py" in f["target_key"]]

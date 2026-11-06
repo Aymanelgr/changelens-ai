@@ -81,7 +81,7 @@ def test_sensitive_files_are_excluded():
                 "config/.env.prod": "SECRET=1",
                 "deploy/server.pem": "x",
                 "keys.py": "KEY = '-----BEGIN RSA PRIVATE KEY-----'",
-                "cloud.py": "AWS = 'AKIAABCDEFGHIJKLMNOP'",
+                "cloud.py": "AWS = 'AKIAABCDEFGHIJKLMNOP'",  # gitleaks:allow (fake key)
                 "ok.py": "x = 1",
             }
         ),
