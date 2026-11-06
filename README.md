@@ -13,7 +13,7 @@
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-pgvector-4169E1?logo=postgresql&logoColor=white)
 
-[Features](#features) � [Architecture](#architecture) � [Quick start](#quick-start) � [Roadmap](docs/ROADMAP.md) � [Contributing](CONTRIBUTING.md)
+[Features](#features) &middot; [Architecture](#architecture) &middot; [Quick start](#quick-start) &middot; [Roadmap](docs/ROADMAP.md) &middot; [Contributing](CONTRIBUTING.md)
 
 </div>
 
