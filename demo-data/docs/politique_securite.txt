@@ -1,0 +1,5 @@
+Politique de sécurité de la Banque Démo (document fictif).
+
+Les opérations sensibles sont journalisées et conservées pendant 5 ans.
+
+Tout virement dépassant 10.000 MAD fait l'objet d'un contrôle renforcé.

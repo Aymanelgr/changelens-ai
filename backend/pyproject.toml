@@ -1,0 +1,25 @@
+[project]
+name = "changelens-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+# B008: FastAPI's Depends() in defaults is the framework's documented style.
+ignore = ["B008"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests legitimately use assert and hard-coded demo passwords.
+"tests/*" = ["S101", "S105", "S106"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["app"]

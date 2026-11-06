@@ -1,0 +1,13 @@
+-r requirements.txt
+colorama==0.4.6
+coverage==7.17.2
+httpcore2==2.16.0
+httpx2==2.16.0
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pygments==2.21.0
+pytest==9.2.0
+pytest-cov==7.1.0
+ruff==0.17.4
+truststore==0.10.5

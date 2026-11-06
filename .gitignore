@@ -1,0 +1,26 @@
+# Secrets: only .env.example is ever committed
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+dist/
+
+# Runtime data
+storage/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,16 @@
+# Direct dependencies. requirements.txt is the pinned result of installing these.
+fastapi
+uvicorn
+sqlalchemy
+alembic
+psycopg[binary]
+pydantic-settings
+python-multipart
+pyjwt
+argon2-cffi
+pyyaml
+pymupdf
+pgvector
+# CPU build, from the extra index at the top of requirements.txt: embeddings run on the CPU.
+torch
+sentence-transformers

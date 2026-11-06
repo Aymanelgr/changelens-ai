@@ -1,0 +1,13 @@
+requirements:
+  - id: REQ-012
+    title: Vérification des virements élevés
+    text: "Les virements supérieurs à 5 000 MAD nécessitent une vérification supplémentaire."
+  - id: REQ-020
+    title: Robustesse des mots de passe
+    text: "Le mot de passe doit contenir au moins 12 caractères."
+  - id: REQ-031
+    title: Historique des virements
+    text: "L'historique des virements doit être plus agréable à consulter."
+  - id: REQ-045
+    title: Notification de connexion
+    text: "Le client doit recevoir une notification à chaque nouvelle connexion."
